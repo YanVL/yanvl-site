@@ -5,10 +5,10 @@ document.addEventListener("DOMContentLoaded", () => {
   })
     .type("Web", { delay: 1500 })
     .delete(3)
-    .type("VueJs", { delay: 1500 })
-    .delete(5)
-    .type("Laravel", { delay: 1500 })
-    .delete(7)
+    .type("JavaScript", { delay: 1500 })
+    .delete(10)
+    .type("Php", { delay: 1500 })
+    .delete(3)
 
     .go();
 });
