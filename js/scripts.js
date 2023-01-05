@@ -3,11 +3,11 @@ document.addEventListener("DOMContentLoaded", () => {
     speed: 200,
     loop: true,
   })
-    .type("Web", { delay: 1500 })
+    .type("Web", { delay: 3000 })
     .delete(3)
-    .type("JavaScript", { delay: 1500 })
-    .delete(10)
-    .type("Php", { delay: 1500 })
+    .type("Js", { delay: 3000 })
+    .delete(2)
+    .type("Php", { delay: 3000 })
     .delete(3)
 
     .go();

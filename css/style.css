@@ -17,7 +17,7 @@ p {
 }
 
 /* -------------------------------- principal -------------------------------- */
-.fundo {
+#banner {
   background-image: linear-gradient(
       193deg,
       rgba(0, 4, 13, 0.9) 0%,
@@ -30,8 +30,6 @@ p {
   background-size: cover;
   overflow: hidden;
   background-position: center;
-  width: 100%;
-  height: 100vh;
 }
 
 .brand:hover {
@@ -83,6 +81,13 @@ p {
   color: wheat;
 }
 
+/* -------------------------------- conhecimentos -------------------------------- */
+#conhecimentos {
+  background-color: antiquewhite;
+  overflow: hidden;
+  width: 100%;
+  height: 75vh;
+}
 
 /* -------------------------------- imagens -------------------------------- */
 .img-redonda {
@@ -90,4 +95,8 @@ p {
   width: 360px;
 }
 
-/* -------------------------------- animacoes -------------------------------- */
+/* -------------------------------- ajustes -------------------------------- */
+.nome span {
+  color: #bc9bdd;
+  text-shadow: 0.1em 0.1em rgb(9, 6, 6);
+}
