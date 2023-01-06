@@ -7,10 +7,16 @@
   #projetos {
     height: 50vh;
   }
+
+  #conhecimentos {
+    width: 100%;
+    height: 50vh;
+  }
 }
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
+  
 }
 
 /*Large devices (desktops, 992px and up) No corrections yet*/

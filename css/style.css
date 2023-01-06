@@ -15,9 +15,6 @@
 * p {
   color: white;
   font-family: "Courier New", Courier, monospace;
-  text-shadow: 0.1em 0.1em #333;
-  font-size: 1.2em;
-  font-weight: 500;
 }
 
 * a {
@@ -38,6 +35,11 @@
   background-size: cover;
   overflow: hidden;
   background-position: center;
+}
+
+#banner p {
+  font-size: 1.2em;
+  font-weight: 500;
 }
 
 .brand:hover .sapinho,
@@ -80,7 +82,7 @@
   background: rgb(0, 0, 0);
   overflow: hidden;
   width: 100%;
-  height: 65vh;
+  height: 50vh;
 }
 
 #conhecimentos h1 {
@@ -113,7 +115,7 @@
   );
   overflow: hidden;
   width: 100%;
-  height: 65vh;
+  height: 50vh;
 }
 
 #projetos h2 {
@@ -141,7 +143,7 @@
 #contatos p {
   color: black;
   font-size: 1.2em;
-  font-weight: 500;
+  font-weight: 550;
   text-shadow: none;
 }
 
@@ -159,8 +161,9 @@
   text-shadow: none;
 }
 
-#rodape a {
+#rodape a, p {
   text-shadow: none;
+  font-size: 0.9em;
 }
 
 /* -------------------------------- imagens -------------------------------- */
@@ -172,6 +175,8 @@
 /* -------------------------------- ajustes -------------------------------- */
 .apresentacao span {
   color: #bc9bdd;
+  font-size: 1em;
+  font-weight: 500;
   text-shadow: 0.1em 0.1em rgb(9, 6, 6);
 }
 
