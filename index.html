@@ -25,7 +25,7 @@
 
 <body>
   <!-- inicio banner-->
-  <section class="align-content-center" id="banner">
+  <section class="align-content-center pb-4" id="banner">
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg">
       <div class="container">
@@ -41,16 +41,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Home</a>
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Conhecimentos</a>
+              <a class="nav-link" href="#conhecimentos">Conhecimentos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Projetos</a>
+              <a class="nav-link" href="#projetos">Projetos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contatos</a>
+              <a class="nav-link" href="#contatos">Contatos</a>
             </li>
           </ul>
         </div>
@@ -60,18 +60,19 @@
     <div class="container capa d-flex mt-3">
       <div class="row">
         <div class="col-md-8 d-flex">
-          <div class="align-self-center">
+          <div class="align-self-center text-center">
             <div class="animate__animated animate__backInLeft">
               <div class="wrapper">
                 <h1>Desenvolvedor <span class="animated"></span></h1>
               </div>
-              <p class="nome">
-                Olá, meu nome é <span>Yan</span>! Sou um entusiasta das áreas relacionadas à tecnologia e
+              <p class="apresentacao">
+                Olá, meu nome é <span>Yan</span>! Sou entusiasta de áreas relacionadas à tecnologia e
                 desenvolvimento,
-                atualmente buscando uma oportunidade como desenvolvedor júnior ou treinee.
+                atualmente buscando uma oportunidade como desenvolvedor.
                 <br><br>
                 Tenho conhecimentos tanto em frontend quanto em backend e atualmente estou
-                me aprofundando na stack Laravel + VueJs (porém aberto a me aprofundar em outras).<br><br>
+                me aprofundando na stack Laravel + VueJs + MySql (porém aberto a conhecer e me aprofundar em
+                outras).<br><br>
                 Mais informações podem ser encontradas ao longo do site (como tecnologias conhecidas, projetos e
                 contatos).
               </p>
@@ -88,10 +89,109 @@
 
   <!-- conhecimentos -->
   <section id="conhecimentos">
-    <h2 class="text-align-center">Conhecimentos</h2>
-
+    <div class="text-center pt-5">
+      <h1>Conhecimentos</h1>
+      <p class="text-center">Algumas tecnologias usadas em projetos pessoais <br></p>
+    </div>
+    <div class="container d-flex justify-content-center pt-3">
+      <div class="row pt-4">
+        <div class="col-2">
+          <img src="img/html.png" width="80" class="img-fluid" alt="">
+        </div>
+        <div class="col-2">
+          <img src="img/css.png" width="80" class="img-fluid" alt="">
+        </div>
+        <div class="col-2">
+          <img src="img/js.png" width="80" class="img-fluid" alt="">
+        </div>
+        <div class="col-2">
+          <img src="img/php.png" width="80" class="img-fluid" alt="">
+        </div>
+        <div class="col-2">
+          <img src="img/csharp.png" width="80" class="img-fluid" alt="">
+        </div>
+        <div class="col-2">
+          <img src="img/mysql.png" width="80" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+    <p class="text-center pt-5">
+      Códigos podem ser encontrados no <a href="https://github.com/YanVL" target="_blank">Github</a>
+    </p>
   </section>
   <!-- /fim conhecimentos-->
+
+  <!-- projetos -->
+  <section id="projetos">
+    <h2 class="text-center pt-sm-1 pt-md-5">Projetos</h2>
+    <div class="container d-flex justify-content-center">
+      <div class="row pt-4 text-sm-start text-md-center">
+        <div class="col-4">
+          <div class="card" style="width: 14rem;">
+            <img src="/img/emdesnv.PNG" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Em breve!</h5>
+              <a href="#" class="btn btn-warning">Visitar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card" style="width: 14rem;">
+            <img src="/img/emdesnv.PNG" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Em breve!</h5>
+              <a href="#" class="btn btn-warning">Visitar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card" style="width: 14rem;">
+            <img src="/img/emdesnv.PNG" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Em breve!</h5>
+              <a href="#" class="btn btn-warning">Visitar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /fim projetos -->
+
+  <!-- contatos -->
+  <section id="contatos">
+    <div class="container pt-3">
+      <div class="row text-center">
+        <h2 class="">Contatos</h2>
+        <p class="text-center">Gostaria de tirar dúvidas ou começar um projeto? Você pode me encontrar em:</p>
+        <div class="row pt-4">
+          <div class="col-4 animate__animated animate__tada efeito-hover">
+            <a href=""><i class="bi bi-github" style="font-size: 4rem; color: black;"></i></a>
+          </div>
+          <div class="col-4 animate__animated animate__tada efeito-hover">
+            <a href=""><i class="bi bi-linkedin" style="font-size: 4rem;"></i></a>
+          </div>
+          <div class="col-4 animate__animated animate__tada efeito-hover">
+            <a href=""><i class="bi bi-instagram" style="font-size: 4rem; color: #fb3958;"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /fim contatos -->
+
+  <!-- rodape -->
+  <footer id="rodape">
+    <div class="container">
+      <div class="row text-white">
+        <p class="pt-4">Desenvolvido por: YanVL <br>
+          Créditos: <a href="https://www.flaticon.com/br/icones-gratis/animais" target="_blank" title="animais ícones">Animais
+            ícones criados por Freepik - Flaticon</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- /fim rodape -->
 
 
 </body>
