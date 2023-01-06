@@ -12,29 +12,32 @@
   font-family: "Exo", "Courier New", Courier, monospace;
 }
 
-p {
-  text-align: justify;
+* p {
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  text-shadow: 0.1em 0.1em #333;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+* a {
+  text-decoration: none;
 }
 
 /* -------------------------------- principal -------------------------------- */
 #banner {
   background-image: linear-gradient(
-      193deg,
-      rgba(0, 4, 13, 0.9) 0%,
-      rgba(3, 137, 130, 0.9) 25%,
+      0deg,
+      rgba(0, 4, 13, 1) 0%,
+      rgba(3, 137, 130, 1) 25%,
       rgba(0, 87, 81, 0.9) 50%,
       rgba(1, 40, 35, 0.9) 75%,
-      rgba(0, 11, 14, 0.9) 100%
+      rgba(0, 11, 14, 1) 100%
     ),
     url("../img/fundo.jpg");
   background-size: cover;
   overflow: hidden;
   background-position: center;
-}
-
-.brand:hover {
-  color: white;
-  text-shadow: 0.1em 0.1em #333;
 }
 
 .brand:hover .sapinho,
@@ -52,22 +55,13 @@ p {
 }
 
 .nav-link:hover {
-  color: wheat;
-  text-shadow: 0.1em 0.1em #333;
+  color: #bc9bdd;
 }
 
 .navbar-toggler {
   color: white;
   color: rgba(255, 255, 255, 0);
   border: none;
-}
-
-.capa p {
-  color: white;
-  font-family: "Courier New", Courier, monospace;
-  text-shadow: 0.1em 0.1em #333;
-  font-size: 1.2em;
-  font-weight: 500;
 }
 
 /* -------------------------------- principal*titulo animado -------------------------------- */
@@ -78,15 +72,95 @@ p {
 }
 
 .wrapper span {
-  color: wheat;
+  color: antiquewhite;
 }
 
 /* -------------------------------- conhecimentos -------------------------------- */
 #conhecimentos {
-  background-color: antiquewhite;
+  background: rgb(0, 0, 0);
   overflow: hidden;
   width: 100%;
-  height: 75vh;
+  height: 65vh;
+}
+
+#conhecimentos h1 {
+  color: #bc9bdd;
+}
+
+#conhecimentos p {
+  color: #bc9bdd;
+  font-size: 1.2em;
+  font-weight: 500;
+  text-shadow: none;
+}
+
+#conhecimentos a {
+  color: rgb(12, 174, 12);
+}
+
+#conhecimentos a:hover {
+  color: green;
+}
+
+/* -------------------------------- projetos -------------------------------- */
+#projetos {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(52, 68, 92, 1) 38%,
+    rgb(234, 234, 234) 100%
+  );
+  overflow: hidden;
+  width: 100%;
+  height: 65vh;
+}
+
+#projetos h2 {
+  color: white;
+}
+
+/* -------------------------------- contatos -------------------------------- */
+#contatos {
+  background: rgb(234, 234, 234);
+  background: linear-gradient(
+    180deg,
+    rgba(234, 234, 234, 1) 0%,
+    rgba(245, 245, 245, 1) 25%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  overflow: hidden;
+  width: 100%;
+  height: 50vh;
+}
+
+#contatos h2 {
+  color: black;
+}
+
+#contatos p {
+  color: black;
+  font-size: 1.2em;
+  font-weight: 500;
+  text-shadow: none;
+}
+
+#contatos a:hover {
+  animation: animate__tada;
+}
+
+/* -------------------------------- rodape -------------------------------- */
+#rodape {
+  background-color: black;
+}
+
+.creditos {
+  margin-top: 20px;
+  text-shadow: none;
+}
+
+#rodape a {
+  text-shadow: none;
 }
 
 /* -------------------------------- imagens -------------------------------- */
@@ -96,7 +170,11 @@ p {
 }
 
 /* -------------------------------- ajustes -------------------------------- */
-.nome span {
+.apresentacao span {
   color: #bc9bdd;
   text-shadow: 0.1em 0.1em rgb(9, 6, 6);
+}
+
+.efeito-hover:hover {
+  animation: animate__tada;
 }
