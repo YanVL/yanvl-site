@@ -3,32 +3,17 @@
   * p {
     text-align: center;
   }
-
-  #projetos {
-    height: 50vh;
-  }
-
-  #conhecimentos {
-    width: 100%;
-    height: 50vh;
-  }
 }
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
-  
+  * p {
+    text-align: justify;
+  }
 }
 
 /*Large devices (desktops, 992px and up) No corrections yet*/
 @media (min-width: 992px) {
-  #banner {
-    width: 100%;
-    height: 100vh;
-  }
-
-  * p {
-    text-align: justify;
-  }
 }
 
 /*X-Large devices (large desktops, 1200px and up)*/
