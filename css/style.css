@@ -183,6 +183,7 @@ p {
     rgba(52, 68, 92, 1) 38%,
     rgb(234, 234, 234) 100%
   );
+  height: auto;
 }
 
 .apresentacao span {
