@@ -65,7 +65,7 @@
           <div>
             <div class="animate__animated animate__backInLeft">
               <div class="wrapper">
-                <h1>Desenvolvedor <span class="animated"></span></h1>
+                <h1>Desenvolvedor: <span class="animated"></span></h1>
               </div>
               <p class="apresentacao">
                 Olá, meu nome é <span>Yan</span>! Sou entusiasta de áreas relacionadas à tecnologia e
@@ -130,38 +130,46 @@
 
   <!-- projetos -->
   <section>
-    <div id="projetos" class="d-flex align-items-center">
-      <div class="container">
+    <div id="projetos" class="pt-5 d-flex align-items-center">
+      <div class="container justify-content-center text-center">
         <h2 class="text-center">Projetos</h2>
-        <div class="conteudos">
-          <div class="d-flex justify-content-center pt-4">
-            <div class="row text-center">
-              <div class="col-4">
-                <div class="card">
-                  <img src="/img/vagas.png" class="card-img-top img-fluid" alt="...">
-                  <div class="card-body">
-                    <a href="https://vagas.netlify.app/" target="_blank" class="btn btn-dark">Vagas</a>
-                  </div>
-                </div>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner pt-3">
+            <div class="carousel-item active">
+              <img src="/img/vagas.png" class="w-75 redimensionada" alt="...">
+              <div class="carousel-caption">
+                <h5>Projeto Vagas VueJs</h5>
+                <p class="text-center d-none d-sm-block">Aplicativo que publica, gerencia e favorita vagas feito com VueJs</p>
+                <a href="https://vagas.netlify.app/" target="_blank" class="btn btn-dark">Visitar</a>
               </div>
-              <div class="col-4">
-                <div class="card">
-                  <img src="/img/emdesnv.PNG" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <a href="#" class="btn btn-warning">Visitar</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="card">
-                  <img src="/img/emdesnv.PNG" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <a href="#" class="btn btn-warning">Visitar</a>
-                  </div>
-                </div>
+            </div>
+            <div class="carousel-item">
+              <img src="/img/dsvendas.png" class="w-75" alt="...">
+              <div class="carousel-caption">
+                <h5 class="">Projeto Vendas (Workshop Dev Superior)</h5>
+                <p class="text-center d-none d-sm-block">Aplicativo que registra e exibe dados de vendas feito com react.</p>
+                <a href="https://dsvendas-yanvl.netlify.app/" target="_blank" class="btn btn-dark">Visitar</a>
               </div>
             </div>
           </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
     </div>
@@ -169,7 +177,7 @@
   <!-- /fim projetos -->
 
   <!-- contatos -->
-  <section id="contatos">
+  <section id="contatos" class="pt-5">
     <div class="pt-3">
       <div class="row text-center justify-content-center">
         <h2>Contatos</h2>
