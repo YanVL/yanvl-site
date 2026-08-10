@@ -139,12 +139,14 @@ section {
 }
 
 .navbar {
+  border: 1px solid transparent;
   transition: background-color 0.25s ease, border-color 0.25s ease, backdrop-filter 0.25s ease;
 }
 
 .fixed-top.scrolled .navbar {
   background: rgba(7, 12, 18, 0.35);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-color: transparent;
+  box-shadow: none;
 }
 
 .nav-link {
@@ -434,6 +436,7 @@ section {
 .project-tag {
   display: inline-flex;
   width: fit-content;
+  margin-bottom: 0.85rem;
   padding: 0.35rem 0.7rem;
   border-radius: 999px;
   background: rgba(188, 155, 221, 0.18);
