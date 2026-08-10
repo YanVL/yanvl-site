@@ -13,9 +13,13 @@
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
   <!-- css animado -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    integrity="sha384-8FzXlYx/3J3zG3W3L/8s0N7Qv5Gf3B5lGxH0sQ9mKQw1L2Q5Rz0nYx6x8o2E4eB8lQm8QdQ=="
+    crossorigin="anonymous" />
   <!-- animacoes javascript type it -->
-  <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js" defer></script>
+  <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js" defer
+    integrity="sha384-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    crossorigin="anonymous"></script>
   <!-- js personalizado -->
   <script src="js/scripts.js" defer></script>
   <!-- css customizado -->
@@ -27,8 +31,8 @@
   <!-- inicio banner-->
   <section id="banner" class="text-center d-flex align-items-center">
     <!-- navbar -->
-    <nav class="fixed-top">
-      <nav class="navbar navbar-expand-lg">
+    <nav class="fixed-top" aria-label="Navegação principal">
+      <nav class="navbar navbar-expand-lg" aria-label="Navegação principal">
         <div class="container">
           <a class="navbar-brand brand icon" href="#banner">
             <img class="sapinho" src="img/sapo.png" alt="logo" width="50">
@@ -68,19 +72,19 @@
                 <h1>Desenvolvedor: <span class="animated"></span></h1>
               </div>
               <p class="apresentacao">
-                Olá, meu nome é <span>Yan</span>! Sou entusiasta de áreas relacionadas à tecnologia e
-                desenvolvimento,
-                atualmente buscando uma oportunidade como desenvolvedor.
+                Olá, meu nome é <span>Yan</span>! Sou desenvolvedor com experiência em desenvolvimento web, interessado
+                em criar soluções eficientes, bem estruturadas e fáceis de manter.
                 <br><br>
-                Tenho conhecimentos tanto em frontend quanto em backend e atualmente estou
-                me aprofundando na stack Laravel + VueJs + MySql (porém aberto a conhecer e me aprofundar em
-                outras).
+                Tenho experiência tanto em frontend quanto em backend, trabalhando principalmente com PHP, Laravel,
+                JavaScript, Vue.js, WordPress e Docker. Atualmente, estou aprofundando meus conhecimentos em arquitetura
+                de software, desenvolvimento de APIs e tecnologias relacionadas ao ecossistema Laravel, enquanto
+                continuo explorando novas ferramentas e tecnologias.
               </p>
             </div>
           </div>
         </div>
         <div class="col-md-5 d-none d-md-block animate__animated animate__bounce">
-          <img src="img/eu.jpg" class="img-redonda mt-5 ms-5" alt="yanvl profile picture">
+          <img src="img/eu.jpg" class="img-redonda mt-5 ms-5" alt="me">
         </div>
       </div>
     </div>
@@ -94,17 +98,19 @@
         <h1>Conhecimentos</h1>
         <p class="text-center">Algumas tecnologias usadas em projetos pessoais</p>
         <div class="row pt-4 justify-content-center">
-          <div class="col">
-            <img src="img/html.png" width="60" class="img-fluid" alt="html">
-          </div>
-          <div class="col">
-            <img src="img/css.png" width="60" class="img-fluid" alt="css">
-          </div>
-          <div class="col">
-            <img src="img/js.png" width="60" class="img-fluid" alt="js">
-          </div>
-          <div class="col">
-            <img src="img/php.png" width="60" class="img-fluid" alt="php">
+          <div class="row pt-5 ps-3">
+            <div class="col">
+              <img src="img/htmlcssjs.png" width="60" class="img-fluid" alt="html css js">
+            </div>
+            <div class="col">
+              <img src="img/hubspot.png" width="60" class="img-fluid" alt="hubspot">
+            </div>
+            <div class="col">
+              <img src="img/gitb.png" width="60" class="img-fluid" alt="git">
+            </div>
+            <div class="col">
+              <img src="img/php.png" width="60" class="img-fluid" alt="php">
+            </div>
           </div>
           <div class="row pt-5 ps-3">
             <div class="col">
@@ -114,10 +120,10 @@
               <img src="img/laravel.svg" width="60" class="img-fluid" alt="laravel">
             </div>
             <div class="col">
-              <img src="img/vuejs.svg" width="60" class="img-fluid" alt="vuejs">
+              <img src="img/tailwind.png" width="60" class="img-fluid" alt="tailwind">
             </div>
             <div class="col">
-              <img src="img/csharp.png" width="60" class="img-fluid" alt="csharp">
+              <img src="img/wordpress.png" width="60" class="img-fluid" alt="wordpress">
             </div>
           </div>
         </div>
@@ -147,7 +153,8 @@
               <img src="/img/vagas.png" class="w-75 redimensionada" alt="...">
               <div class="carousel-caption">
                 <h5>Projeto Vagas VueJs</h5>
-                <p class="text-center d-none d-sm-block">Aplicativo que publica, gerencia e favorita vagas feito com VueJs</p>
+                <p class="text-center d-none d-sm-block">Aplicativo que publica, gerencia e favorita vagas feito com
+                  VueJs</p>
                 <a href="https://vagas.netlify.app/" target="_blank" class="btn btn-dark">Visitar</a>
               </div>
             </div>
@@ -155,7 +162,8 @@
               <img src="/img/dsvendas.png" class="w-75" alt="...">
               <div class="carousel-caption">
                 <h5 class="">Projeto Vendas (Workshop Dev Superior)</h5>
-                <p class="text-center d-none d-sm-block">Aplicativo que registra e exibe dados de vendas feito com react.</p>
+                <p class="text-center d-none d-sm-block">Aplicativo que registra e exibe dados de vendas feito com
+                  react.</p>
                 <a href="https://dsvendas-yanvl.netlify.app/" target="_blank" class="btn btn-dark">Visitar</a>
               </div>
             </div>
