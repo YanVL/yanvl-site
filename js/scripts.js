@@ -1,4 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const navbarToggler = document.querySelector(".navbar-toggler");
+  const navbarCollapse = document.querySelector("#navbarSupportedContent");
+
+  if (navbarCollapse && navbarToggler) {
+    navbarCollapse.addEventListener("shown.bs.collapse", () => {
+      navbarToggler.classList.add("is-open");
+      navbarToggler.setAttribute("aria-expanded", "true");
+    });
+
+    navbarCollapse.addEventListener("hidden.bs.collapse", () => {
+      navbarToggler.classList.remove("is-open");
+      navbarToggler.setAttribute("aria-expanded", "false");
+    });
+  }
+
   new TypeIt(".animated", {
     speed: 200,
     loop: true,
