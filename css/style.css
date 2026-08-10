@@ -710,7 +710,6 @@ section {
 
 .hero-title {
   display: inline-flex;
-  flex-wrap: wrap;
   align-items: baseline;
   justify-content: center;
   gap: 0.35rem;
@@ -721,6 +720,7 @@ section {
   font-weight: 800;
   color: #fff;
   text-align: center;
+  white-space: nowrap;
   text-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
 }
 
@@ -753,5 +753,7 @@ section {
   .hero-title {
     justify-content: flex-start;
     text-align: left;
+    white-space: nowrap;
+    font-size: clamp(1.5rem, 7vw, 2.7rem);
   }
 }
