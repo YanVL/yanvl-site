@@ -743,6 +743,7 @@ section {
   background-clip: text;
   color: transparent;
   text-shadow: 0 0 24px rgba(188, 155, 221, 0.26);
+  padding-left: 10px;
 }
 
 @media (max-width: 767.98px) {
