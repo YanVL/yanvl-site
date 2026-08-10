@@ -691,6 +691,26 @@ section {
 
 /* -------------------------------- ajustes -------------------------------- */
 
+.wrapper {
+  margin-bottom: 1.5rem;
+}
+
+.hero-title {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem;
+  margin: 0;
+  font-size: clamp(2.25rem, 5vw, 4.2rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  font-weight: 800;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
+}
+
 .apresentacao span {
   color: #bc9bdd;
   font-size: 1em;
@@ -703,5 +723,22 @@ section {
 }
 
 .animated {
-  color: antiquewhite;
+  display: inline-block;
+  color: #f5ebff;
+  background: linear-gradient(135deg, #f5ebff 0%, #bc9bdd 42%, #7bc5d4 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 24px rgba(188, 155, 221, 0.26);
+}
+
+@media (max-width: 767.98px) {
+  .wrapper {
+    margin-bottom: 1rem;
+  }
+
+  .hero-title {
+    justify-content: flex-start;
+    text-align: left;
+  }
 }
