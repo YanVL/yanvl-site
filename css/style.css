@@ -61,6 +61,14 @@ select {
   text-wrap: pretty;
 }
 
+.section-header p,
+.section-footer-copy,
+#projetos .section-header p,
+#contatos p,
+.contact-header p {
+  text-align: center;
+}
+
 * a {
   text-decoration: none;
 }
@@ -97,10 +105,12 @@ section {
     ),
     url("../img/backgrounds/background-hero.jpg");
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   width: 100%;
   overflow: hidden;
   background-position: center;
+  padding-top: 5.5rem;
 }
 
 #banner {
