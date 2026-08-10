@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const navbarToggler = document.querySelector(".navbar-toggler");
   const navbarCollapse = document.querySelector("#navbarSupportedContent");
+  const fixedHeader = document.querySelector(".fixed-top");
 
   if (navbarCollapse && navbarToggler) {
     navbarCollapse.addEventListener("shown.bs.collapse", () => {
@@ -13,6 +14,19 @@ document.addEventListener("DOMContentLoaded", () => {
       navbarToggler.setAttribute("aria-expanded", "false");
     });
   }
+
+  const toggleHeaderState = () => {
+    if (!fixedHeader) return;
+
+    if (window.scrollY > 24) {
+      fixedHeader.classList.add("scrolled");
+    } else {
+      fixedHeader.classList.remove("scrolled");
+    }
+  };
+
+  toggleHeaderState();
+  window.addEventListener("scroll", toggleHeaderState, { passive: true });
 
   new TypeIt(".animated", {
     speed: 200,
