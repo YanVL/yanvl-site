@@ -13,9 +13,13 @@
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
   <!-- css animado -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    integrity="sha384-8FzXlYx/3J3zG3W3L/8s0N7Qv5Gf3B5lGxH0sQ9mKQw1L2Q5Rz0nYx6x8o2E4eB8lQm8QdQ=="
+    crossorigin="anonymous" />
   <!-- animacoes javascript type it -->
-  <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js" defer></script>
+  <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js" defer
+    integrity="sha384-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    crossorigin="anonymous"></script>
   <!-- js personalizado -->
   <script src="js/scripts.js" defer></script>
   <!-- css customizado -->
@@ -27,8 +31,8 @@
   <!-- inicio banner-->
   <section id="banner" class="text-center d-flex align-items-center">
     <!-- navbar -->
-    <nav class="fixed-top">
-      <nav class="navbar navbar-expand-lg">
+    <nav class="fixed-top" aria-label="Navegação principal">
+      <nav class="navbar navbar-expand-lg" aria-label="Navegação principal">
         <div class="container">
           <a class="navbar-brand brand icon" href="#banner">
             <img class="sapinho" src="img/sapo.png" alt="logo" width="50">
@@ -37,7 +41,11 @@
           <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="menu-toggle" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -68,19 +76,19 @@
                 <h1>Desenvolvedor: <span class="animated"></span></h1>
               </div>
               <p class="apresentacao">
-                Olá, meu nome é <span>Yan</span>! Sou entusiasta de áreas relacionadas à tecnologia e
-                desenvolvimento,
-                atualmente buscando uma oportunidade como desenvolvedor.
+                Olá, meu nome é <span>Yan</span>! Sou desenvolvedor com experiência em desenvolvimento web, interessado
+                em criar soluções eficientes, bem estruturadas e fáceis de manter.
                 <br><br>
-                Tenho conhecimentos tanto em frontend quanto em backend e atualmente estou
-                me aprofundando na stack Laravel + VueJs + MySql (porém aberto a conhecer e me aprofundar em
-                outras).
+                Tenho experiência tanto em frontend quanto em backend, trabalhando principalmente com PHP, Laravel,
+                JavaScript, Vue.js, WordPress e Docker. Atualmente, estou aprofundando meus conhecimentos em arquitetura
+                de software, desenvolvimento de APIs e tecnologias relacionadas ao ecossistema Laravel, enquanto
+                continuo explorando novas ferramentas e tecnologias.
               </p>
             </div>
           </div>
         </div>
         <div class="col-md-5 d-none d-md-block animate__animated animate__bounce">
-          <img src="img/eu.jpg" class="img-redonda mt-5 ms-5" alt="yanvl profile picture">
+          <img src="img/eu.jpg" class="img-redonda mt-5 ms-5" alt="me">
         </div>
       </div>
     </div>
@@ -88,113 +96,142 @@
   <!-- /fim banner-->
 
   <!-- conhecimentos -->
-  <section>
-    <div id="conhecimentos" class="d-flex align-items-center">
-      <div class="container text-center">
+  <section id="conhecimentos" class="section-space">
+    <div class="container text-center">
+      <div class="section-header">
         <h1>Conhecimentos</h1>
         <p class="text-center">Algumas tecnologias usadas em projetos pessoais</p>
-        <div class="row pt-4 justify-content-center">
-          <div class="col">
-            <img src="img/html.png" width="60" class="img-fluid" alt="html">
-          </div>
-          <div class="col">
-            <img src="img/css.png" width="60" class="img-fluid" alt="css">
-          </div>
-          <div class="col">
-            <img src="img/js.png" width="60" class="img-fluid" alt="js">
-          </div>
-          <div class="col">
-            <img src="img/php.png" width="60" class="img-fluid" alt="php">
-          </div>
-          <div class="row pt-5 ps-3">
-            <div class="col">
-              <img src="img/mysql.png" width="60" class="img-fluid" alt="mysql">
-            </div>
-            <div class="col">
-              <img src="img/laravel.svg" width="60" class="img-fluid" alt="laravel">
-            </div>
-            <div class="col">
-              <img src="img/vuejs.svg" width="60" class="img-fluid" alt="vuejs">
-            </div>
-            <div class="col">
-              <img src="img/csharp.png" width="60" class="img-fluid" alt="csharp">
-            </div>
+      </div>
+
+      <div class="row tech-grid justify-content-center">
+        <div class="col-6 col-md-3 tech-item">
+          <div class="tech-card">
+            <img src="img/htmlcssjs.png" class="img-fluid" alt="HTML, CSS e JS">
+            <span>HTML/CSS/JS</span>
           </div>
         </div>
-        <p class="text-center pt-4">
-          Códigos podem ser encontrados no <a href="https://github.com/YanVL" target="_blank">Github</a>
-        </p>
+        <div class="col-6 col-md-3 tech-item">
+          <div class="tech-card">
+            <img src="img/hubspot.png" class="img-fluid" alt="HubSpot">
+            <span>HubSpot</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 tech-item">
+          <div class="tech-card">
+            <img src="img/gitb.png" class="img-fluid" alt="Git">
+            <span>Git</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 tech-item">
+          <div class="tech-card">
+            <img src="img/php.png" class="img-fluid" alt="PHP">
+            <span>PHP</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 tech-item">
+          <div class="tech-card">
+            <img src="img/mysql.png" class="img-fluid" alt="MySQL">
+            <span>MySQL</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 tech-item">
+          <div class="tech-card">
+            <img src="img/laravel.svg" class="img-fluid" alt="Laravel">
+            <span>Laravel</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 tech-item">
+          <div class="tech-card">
+            <img src="img/tailwind.png" class="img-fluid" alt="Tailwind CSS">
+            <span>Tailwind</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 tech-item">
+          <div class="tech-card">
+            <img src="img/wordpress.png" class="img-fluid" alt="WordPress">
+            <span>WordPress</span>
+          </div>
+        </div>
       </div>
+
+      <p class="text-center section-footer-copy">
+        Códigos podem ser encontrados no <a href="https://github.com/YanVL" target="_blank">Github</a>
+      </p>
+    </div>
   </section>
   <!-- /fim conhecimentos-->
 
   <!-- projetos -->
-  <section>
-    <div id="projetos" class="pt-5 d-flex align-items-center">
-      <div class="container justify-content-center text-center">
-        <h2 class="text-center">Projetos</h2>
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-              aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-              aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner pt-3">
-            <div class="carousel-item active">
-              <img src="/img/vagas.png" class="w-75 redimensionada" alt="...">
-              <div class="carousel-caption">
-                <h5>Projeto Vagas VueJs</h5>
-                <p class="text-center d-none d-sm-block">Aplicativo que publica, gerencia e favorita vagas feito com VueJs</p>
-                <a href="https://vagas.netlify.app/" target="_blank" class="btn btn-dark">Visitar</a>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="/img/dsvendas.png" class="w-75" alt="...">
-              <div class="carousel-caption">
-                <h5 class="">Projeto Vendas (Workshop Dev Superior)</h5>
-                <p class="text-center d-none d-sm-block">Aplicativo que registra e exibe dados de vendas feito com react.</p>
-                <a href="https://dsvendas-yanvl.netlify.app/" target="_blank" class="btn btn-dark">Visitar</a>
-              </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+  <section id="projetos" class="section-space">
+    <div class="container justify-content-center text-center">
+      <h2 class="text-center">Projetos</h2>
+      <div id="carouselExampleCaptions" class="carousel slide project-carousel" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
         </div>
+        <div class="carousel-inner project-carousel-inner">
+          <div class="carousel-item active">
+            <img src="/img/vagas.png" class="w-75 redimensionada" alt="...">
+            <div class="carousel-caption">
+              <h5>Projeto Vagas VueJs</h5>
+              <p class="text-center d-none d-sm-block">Aplicativo que publica, gerencia e favorita vagas feito com
+                VueJs</p>
+              <a href="https://vagas.netlify.app/" target="_blank" class="btn btn-dark">Visitar</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/img/dsvendas.png" class="w-75" alt="...">
+            <div class="carousel-caption">
+              <h5 class="">Projeto Vendas (Workshop Dev Superior)</h5>
+              <p class="text-center d-none d-sm-block">Aplicativo que registra e exibe dados de vendas feito com
+                react.</p>
+              <a href="https://dsvendas-yanvl.netlify.app/" target="_blank" class="btn btn-dark">Visitar</a>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </div>
   </section>
   <!-- /fim projetos -->
 
   <!-- contatos -->
-  <section id="contatos" class="pt-5">
-    <div class="pt-3">
-      <div class="row text-center justify-content-center">
+  <section id="contatos" class="section-space">
+    <div class="container text-center">
+      <div class="contact-header">
         <h2>Contatos</h2>
         <p class="text-center">Gostaria de tirar dúvidas ou começar um projeto? Você pode me encontrar em:</p>
-        <div class="row pt-4">
-          <div class="col animate__animated animate__tada efeito-hover">
-            <a href="https://github.com/YanVL" target="_blank"><i class="bi bi-github"
-                style="font-size: 4rem; color: black;"></i></a>
-          </div>
-          <div class="col animate__animated animate__tada efeito-hover">
-            <a href="https://www.linkedin.com/in/yanvl" target="_blank"><i class="bi bi-linkedin"
-                style="font-size: 4rem;"></i></a>
-          </div>
-          <div class="col animate__animated animate__tada efeito-hover">
-            <a href="https://www.instagram.com/yanvl.dev/" target="_blank"><i class="bi bi-instagram"
-                style="font-size: 4rem; color: #fb3958;"></i></a>
-          </div>
+      </div>
+
+      <div class="row social-grid justify-content-center g-3">
+        <div class="col-6 col-md-4 social-item animate__animated animate__tada efeito-hover">
+          <a href="https://github.com/YanVL" target="_blank" class="social-link github-link" aria-label="GitHub">
+            <i class="bi bi-github"></i>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 social-item animate__animated animate__tada efeito-hover">
+          <a href="https://www.linkedin.com/in/yanvl" target="_blank" class="social-link linkedin-link" aria-label="LinkedIn">
+            <i class="bi bi-linkedin"></i>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 social-item animate__animated animate__tada efeito-hover">
+          <a href="https://www.instagram.com/yanvl.dev/" target="_blank" class="social-link instagram-link" aria-label="Instagram">
+            <i class="bi bi-instagram"></i>
+          </a>
         </div>
       </div>
     </div>
@@ -205,10 +242,9 @@
   <footer id="rodape">
     <div class="container">
       <div class="row text-white">
-        <p class="pt-4">Desenvolvido por: YanV.<br>
-          Logo: <a href="https://www.flaticon.com/br/icones-gratis/animais" target="_blank"
-            title="animais ícones">Animais
-            ícones criados por Freepik - Flaticon</a>
+        <p class="pt-4 footer-copy">
+          YanV • Desenvolvedor Web<br>
+          Disponível para projetos e colaborações.
         </p>
       </div>
     </div>
