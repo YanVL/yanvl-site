@@ -33,11 +33,11 @@ document.addEventListener("DOMContentLoaded", () => {
     loop: true,
   })
     .type("Websites", { delay: 3000 })
-    .delete(6)
+    .delete(8)
     .type("Javascript", { delay: 3000 })
     .delete(10)
     .type("Php", { delay: 3000 })
-    .delete(5)
+    .delete(3)
     .type("Laravel", { delay: 3000 })
     .delete(7)
     .type("Wordpress", { delay: 3000 })
