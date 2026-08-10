@@ -402,8 +402,8 @@ section {
   grid-template-columns: minmax(0, 1.35fr) minmax(0, 0.95fr);
   align-items: stretch;
   width: 100%;
-  min-height: clamp(360px, 42vw, 500px);
-  height: clamp(360px, 42vw, 500px);
+  height: 500px;
+  min-height: 500px;
   background: rgba(9, 14, 22, 0.82);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 1.5rem;
