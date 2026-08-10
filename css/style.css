@@ -461,31 +461,39 @@ section {
 
 .project-carousel .carousel-control-prev,
 .project-carousel .carousel-control-next {
-  width: 3.25rem;
-  height: 3.25rem;
+  width: 3.5rem;
+  height: 3.5rem;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(8, 12, 18, 0.72);
-  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(188, 155, 221, 0.25);
   border-radius: 50%;
   opacity: 1;
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
   z-index: 3;
+  transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .project-carousel .carousel-control-prev {
-  left: 1rem;
+  left: -1.25rem;
 }
 
 .project-carousel .carousel-control-next {
-  right: 1rem;
+  right: -1.25rem;
+}
+
+.project-carousel .carousel-control-prev:hover,
+.project-carousel .carousel-control-next:hover {
+  background: #bc9bdd;
+  transform: translateY(-50%) scale(1.04);
+  box-shadow: 0 14px 30px rgba(188, 155, 221, 0.35);
 }
 
 .project-carousel .carousel-control-prev-icon,
 .project-carousel .carousel-control-next-icon {
-  width: 1.2rem;
-  height: 1.2rem;
-  filter: invert(1) grayscale(1);
+  width: 1.25rem;
+  height: 1.25rem;
+  filter: brightness(0) saturate(100%) invert(12%) sepia(16%) saturate(330%) hue-rotate(177deg) brightness(90%) contrast(110%);
 }
 
 @media (max-width: 767.98px) {
